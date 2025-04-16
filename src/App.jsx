@@ -16,9 +16,9 @@ function App() {
 
    <Routes>
     
-   <Route path="/homepage" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/lista-post" element={<Posts />} />
+   <Route path="/homepage" Component={Homepage} /> 
+   <Route path="/about" Component={About} /> 
+   <Route path="/lista-post" Component={Posts} />
 
 
    </Routes>
