@@ -16,7 +16,7 @@ function App() {
 
    <Routes>
     
-    <Route Component={<DefaultLayout />} >
+    <Route element={<DefaultLayout />} >
     <Route path="/" element={<Homepage />} >
     <Route path="/about" element={<About/>} />
     <Route path="/lista-post" element={<Posts/>} />
