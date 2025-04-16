@@ -12,12 +12,11 @@ function App() {
     <>
    
    <BrowserRouter>
-   <Navbar/>
-
+   
 
    <Routes>
     
-    <Route path="/homepage" component={Homepage} />
+    <Route path="/homepage" Component={Homepage} />
     <Route path="/about" Component={About} />
     <Route path="/lista-post" Component={Posts} />
 
