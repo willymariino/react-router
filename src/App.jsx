@@ -10,9 +10,10 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-
+   
    <BrowserRouter>
+   <Navbar/>
+
 
    <Routes>
     
