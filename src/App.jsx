@@ -18,7 +18,7 @@ function App() {
    <Routes>
     
     <Route path="/homepage" component={Homepage} />
-    <Route path="/chi-siamo" Component={About} />
+    <Route path="/about" Component={About} />
     <Route path="/lista-post" Component={Posts} />
 
 
