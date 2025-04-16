@@ -11,5 +11,9 @@ ul {
     color: inherit;
 }
 
+.nav-link:hover{
+    color: blue;
+}
+
 
  
