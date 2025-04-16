@@ -24,18 +24,18 @@ function Posts(){
 
         <ul>
 
-        {posts.map((post) => (
-        <li key={post.id}>
-        <h3>{post.title}</h3>
-        <p>{post.body}</p>
+            {posts.map((post) => (
+            <li key={post.id}>
+                <h3>{post.title}</h3>
+                <p>{post.body}</p>
 
-</li>
+            </li>
 
 
 
-))}
+         ))}
 
-</ul>
+        </ul>
 
        
         </>
