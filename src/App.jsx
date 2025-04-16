@@ -13,7 +13,7 @@ function App() {
 
    <Routes>
 
-    <Route path="/" component={homepage} />
+    <Route path="/homepage" component={homepage} />
     <Route path="/chi-siamo" Component={about} />
     <Route path="/lista-post" Component={posts} />
 
