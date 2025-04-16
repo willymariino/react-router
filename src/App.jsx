@@ -9,10 +9,13 @@ function App() {
  
 
   return (
+    <>
+    <Navbar/>
+
    <BrowserRouter>
 
    <Routes>
-
+    
     <Route path="/homepage" component={homepage} />
     <Route path="/chi-siamo" Component={about} />
     <Route path="/lista-post" Component={posts} />
@@ -21,6 +24,7 @@ function App() {
    </Routes>
    
    </BrowserRouter>
+   </>
   )
 }
 
