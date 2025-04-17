@@ -5,3 +5,5 @@ function BlogDetail() {
         </div>
     )
 }
+
+export default BlogDetail
