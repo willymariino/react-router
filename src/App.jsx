@@ -17,7 +17,7 @@ function App() {
 
         <Routes>
           <Route Component={DefaultLayout}>
-            <Route path="/homepage" Component={Homepage} />
+            <Route path="/" Component={Homepage} />
             <Route path="/about" Component={About} />
             <Route path="/lista-post" Component={Posts} />
           </Route>
