@@ -13,7 +13,7 @@ function Posts() {
             .catch((error) => console.error("errore durante il caricamento", error))
     }
 
-    useEffect(fetchPosts, [])
+    useEffect(fetchPosts, []) // significa: soltanto quando monto questo componente, avviene la chiamata.
 
     return (
         <>
@@ -22,7 +22,7 @@ function Posts() {
 
             <p>lista post</p>
 
-            <ul>
+            <ol>
 
                 {posts.map((post) => (
                     <li key={post.id}>
@@ -35,7 +35,7 @@ function Posts() {
 
                 ))}
 
-            </ul>
+            </ol>
 
 
         </>
