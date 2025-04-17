@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import Navbar from "../components/navbar"
 
 
@@ -26,7 +27,8 @@ function Posts() {
 
                 {posts.map((post) => (
                     <li key={post.id}>
-                        <h3>{post.title}</h3>
+
+                        <Link to={"/lista-post/" + post.id}><h3>{post.title}</h3></Link>
 
 
                     </li>

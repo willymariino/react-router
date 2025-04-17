@@ -1,12 +1,15 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 function BlogDetail() {
 
-    const params = useParams()
+    const { id } = useParams()
+    console.log(id)
 
     return (
-        <div>
-            sono il dettaglio del post
-        </div>
+        <>
+            <h1>post Detail</h1>
+            <p>sono il dettaglio del post</p>
+
+        </>
     )
 }
 
