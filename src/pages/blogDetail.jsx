@@ -32,7 +32,7 @@ function BlogDetail() {
     return (
         <>
             <h1>monster detail</h1>
-            <p>descrizione</p>
+            <p>{post.name}</p>
 
         </>
     )
