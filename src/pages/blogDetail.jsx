@@ -6,8 +6,8 @@ function BlogDetail() {
 
     return (
         <>
-            <h1>post Detail</h1>
-            <p>sono il dettaglio del post</p>
+            <h1>monster detail</h1>
+            <p>descrizione</p>
 
         </>
     )
