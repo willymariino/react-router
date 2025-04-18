@@ -40,7 +40,7 @@ function BlogDetail() {
             <p>Armor Class</p>
             <ul>
                 {post.armor_class.map((armor, index) => (
-                    <li key={index}>{armor}</li>
+                    <li key={index}>{armor.type}: {armor.value}</li>
                 )
 
                 )}
