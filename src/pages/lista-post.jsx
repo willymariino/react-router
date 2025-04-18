@@ -1,7 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import Navbar from "../components/navbar"
 
 
 
@@ -9,8 +8,8 @@ function Posts() {
     const [posts, setPosts] = useState([])
 
     function fetchPosts() {
-        axios.get("https://jsonplaceholder.typicode.com/posts")
-            .then((res) => setPosts(res.data))
+        axios.get("https://www.dnd5eapi.co/api/monsters")
+            .then((res) => setPosts(res.data.results))
             .catch((error) => console.error("errore durante il caricamento", error))
     }
 
@@ -21,14 +20,14 @@ function Posts() {
             <h1>tutti nostri post</h1>
 
 
-            <p>lista post</p>
+            <p>lista mostri Dungeons & Dragons</p>
 
             <ol>
 
                 {posts.map((post) => (
-                    <li key={post.id}>
+                    <li key={post.index}>
 
-                        <Link to={"/lista-post/" + post.id}><h3>{post.title}</h3></Link>
+                        <Link to={"/lista-post/" + post.index}><h3>{post.name}</h3></Link>
 
 
                     </li>
