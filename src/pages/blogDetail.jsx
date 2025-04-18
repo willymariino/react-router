@@ -38,7 +38,7 @@ function BlogDetail() {
             <p> alignment: {post.alignment}</p>
 
             <p>Armor Class</p>
-            <u>
+            <ul>
                 {post.armor_class.map((armor, index) => (
                     <li key={index}>{armor}</li>
                 )
@@ -46,15 +46,15 @@ function BlogDetail() {
                 )}
 
 
-            </u>
+            </ul>
 
             <h2>attributes</h2>
-            <p> strenght: {post.strenght} </p>
+            <p> strenght: {post.strength} </p>
             <p> dexterity:{post.dexterity}</p>
             <p> constitution: {post.constitution}</p>
             <p>  intelligence: {post.intelligence} </p>
             <p> wisdom: {post.wisdom} </p>
-            <p> charisma: {post.charima}</p>
+            <p> charisma: {post.charisma}</p>
 
 
         </>
