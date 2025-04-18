@@ -37,6 +37,17 @@ function BlogDetail() {
             <p> type: {post.type}</p>
             <p> alignment: {post.alignment}</p>
 
+            <p>Armor Class</p>
+            <u>
+                {post.armor_class.map((armor, index) => (
+                    <li key={index}>{armor}</li>
+                )
+
+                )}
+
+
+            </u>
+
             <h2>attributes</h2>
             <p> strenght: {post.strenght} </p>
             <p> dexterity:{post.dexterity}</p>
