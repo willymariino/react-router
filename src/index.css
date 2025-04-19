@@ -19,9 +19,20 @@ img {
 }
 
 .image-container {
-    max-width: 20%;
+    max-width: 30%;
+    max-height: 40%;
+
 }
 
-.card {
+.text-container p {
     display: flex;
+    align-items: flex-start;
+}
+
+
+
+.card {
+    align-items: flex-start;
+    display: flex;
+    gap: 3%;
 }
