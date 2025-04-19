@@ -22,11 +22,15 @@ img {
     max-width: 30%;
     max-height: 40%;
 
+
 }
 
 .text-container p {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+
 }
 
 
@@ -35,4 +39,10 @@ img {
     align-items: flex-start;
     display: flex;
     gap: 3%;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
