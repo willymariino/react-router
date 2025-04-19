@@ -32,32 +32,38 @@ function BlogDetail() {
     return (
         <>
             <h1>monster detail</h1>
-            <img src={post.image} alt={post.name} />
-            <p>name: {post.name}</p>
-            <p> size: {post.size}</p>
-            <p> type: {post.type}</p>
-            <p> alignment: {post.alignment}</p>
+            <div className="card">
 
-            <p>Armor Class</p>
-            <ul>
-                {post.armor_class.map((armor, index) => (
-                    <li key={index}>{armor.type}: {armor.value}</li>
-                )
+                <div className="image-container">
+                    <img src={`https://www.dnd5eapi.co${post.image}`} alt={post.name} />
+                </div>
 
-                )}
+                <div className="text-container">
+                    <p>name: {post.name}</p>
+                    <p> size: {post.size}</p>
+                    <p> type: {post.type}</p>
+                    <p> alignment: {post.alignment}</p>
 
+                    <p>Armor Class</p>
+                    <ul>
+                        {post.armor_class.map((armor, index) => (
+                            <li key={index}>{armor.type}: {armor.value}</li>
+                        )
 
-            </ul>
-
-            <h2>attributes</h2>
-            <p> strenght: {post.strength} </p>
-            <p> dexterity:{post.dexterity}</p>
-            <p> constitution: {post.constitution}</p>
-            <p>  intelligence: {post.intelligence} </p>
-            <p> wisdom: {post.wisdom} </p>
-            <p> charisma: {post.charisma}</p>
+                        )}
 
 
+                    </ul>
+
+                    <h2>attributes</h2>
+                    <p> strenght: {post.strength} </p>
+                    <p> dexterity:{post.dexterity}</p>
+                    <p> constitution: {post.constitution}</p>
+                    <p>  intelligence: {post.intelligence} </p>
+                    <p> wisdom: {post.wisdom} </p>
+                    <p> charisma: {post.charisma}</p>
+                </div>
+            </div>
         </>
     )
 }

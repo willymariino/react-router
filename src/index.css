@@ -13,3 +13,15 @@ nav {
 .nav-link:hover {
     color: blue;
 }
+
+img {
+    width: 100%;
+}
+
+.image-container {
+    max-width: 20%;
+}
+
+.card {
+    display: flex;
+}
