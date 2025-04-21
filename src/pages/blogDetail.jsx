@@ -61,12 +61,14 @@ function BlogDetail() {
 
                     <div className="attributes">
                         <h2>attributes</h2>
-                        <p> strenght: {post.strength} </p>
-                        <p> dexterity:{post.dexterity}</p>
-                        <p> constitution: {post.constitution}</p>
-                        <p>  intelligence: {post.intelligence} </p>
-                        <p> wisdom: {post.wisdom} </p>
-                        <p> charisma: {post.charisma}</p>
+                        <ul>
+                            <li> strenght: {post.strength} </li>
+                            <li> dexterity:{post.dexterity} </li>
+                            <li> constitution: {post.constitution} </li>
+                            <li>  intelligence: {post.intelligence}  </li>
+                            <li>wisdom: {post.wisdom}  </li>
+                            <li> charisma: {post.charisma} </li>
+                        </ul>
                     </div>
                 </div>
             </div>
