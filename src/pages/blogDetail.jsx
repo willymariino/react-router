@@ -41,7 +41,7 @@ function BlogDetail() {
                 <div className="text-container">
 
                     <div className="general-info">
-                        <h2>General Info</h2>
+                        <h2 className="info-title">General Info</h2>
                         <p>name: {post.name}</p>
                         <p> size: {post.size}</p>
                         <p> type: {post.type}</p>

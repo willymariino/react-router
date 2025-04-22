@@ -25,6 +25,10 @@ img {
 
 }
 
+.info-title {
+    margin-top: 0;
+}
+
 .text-container p {
     display: flex;
     align-items: flex-start;
